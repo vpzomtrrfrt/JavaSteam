@@ -12,7 +12,6 @@ plugins {
     alias(libs.plugins.maven.publish)
     alias(libs.plugins.protobuf.gradle)
     id("jacoco")
-    id("signing")
     projectversiongen
     steamlanguagegen
     rpcinterfacegen
@@ -189,8 +188,4 @@ publishing {
             }
         }
     }
-}
-
-signing {
-    sign(publishing.publications["mavenJava"])
 }

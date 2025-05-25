@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.protobuf.gradle)
     id("java")
     id("maven-publish")
-    id("signing")
 }
 
 repositories {
